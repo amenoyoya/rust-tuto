@@ -58,7 +58,8 @@ $ rustup component add rust-src
 # install cmake, gcc ...etc
 $ sudo apt install -y cmake build-essential
 
-# install evcxr_jupyter crate
+# install evcxr_repl & evcxr_jupyter crate
+$ cargo install evcxr_repl
 $ cargo install evcxr_jupyter
 $ evcxr_jupyter --install
 
