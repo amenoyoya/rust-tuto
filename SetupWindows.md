@@ -33,23 +33,28 @@
 # => restart powershell for reflecting environmental variables: `PATH` etc
 
 # confirm rust compiler version
-$ rustc --version
+> rustc --version
 rustc 1.55.0 (c8dfcfe04 2021-09-06)
 
 # install openssl for building cargo-generate
-$ choco install -y openssl
+> choco install -y openssl
 
 ## => installed to: C:\Program Files\OpenSSL-Win64
 
 # => restart powershell for reflecting environmental variables
 
 # after restarting powershell, upgrade rust to the latest version
-$ rustup update
+> rustup update
 
 # install cargo-generate crate
 ## * cargo-generate: enable `cargo generate` command to generate rust project from template
 ## * require `openssl`: (`choco install -y openssl`)
-$ cargo install cargo-generate
+> cargo install cargo-generate
+
+# install cargo-edit crate
+## * cargo-edit: a utility for managing cargo dependencies from the command line
+### e.g.) `cargo add <crate>`: add crate dependencies into Cargo.toml automatically
+> cargo install cargo-edit
 ```
 
 ### Setup JupyterLab REPL environment

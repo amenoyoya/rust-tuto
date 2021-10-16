@@ -33,6 +33,11 @@ $ rustup update
 ## * cargo-generate: enable `cargo generate` command to generate rust project from template
 ## * require `openssl`: if you have not installed it, `sudo apt install -y libssl-dev`
 $ cargo install cargo-generate
+
+# install cargo-edit crate
+## * cargo-edit: a utility for managing cargo dependencies from the command line
+### e.g.) `cargo add <crate>`: add crate dependencies into Cargo.toml automatically
+$ cargo install cargo-edit
 ```
 
 ### Setup JupyterLab REPL environment
