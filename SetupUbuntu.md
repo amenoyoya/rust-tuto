@@ -24,7 +24,15 @@ $ . ~/.bashrc
 
 # confirm rust compiler version
 $ rustc --version
-rustc 1.55.1 (9bc8c42bb 2021-09-06)
+rustc 1.55.0 (c8dfcfe04 2021-09-06)
+
+# upgrade rust to the latest version
+$ rustup update
+
+# install cargo-generate crate
+## * cargo-generate: enable `cargo generate` command to generate rust project from template
+## * require `openssl`: if you have not installed it, `sudo apt install -y libssl-dev`
+$ cargo install cargo-generate
 ```
 
 ### Setup JupyterLab REPL environment
